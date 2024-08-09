@@ -1,0 +1,92 @@
+@import "./base.css";
+@import "./variable.css";
+
+/* Tailwind's directive */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    line-height: 1;
+}
+
+.heading-pink {
+    font-size: 6.4rem;
+    color: var(--pink);
+}
+.heading-brown {
+    display: block;
+    font-size: 6.4rem;
+    color: var(--black-brown);
+}
+
+.text {
+    font-size: 1.6rem;
+    color: var(--pink);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-width: 100vw;
+}
+
+.left-side {
+    padding: 5rem 10rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.information {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 44.5rem;
+    height: 40.4rem;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    background-color: #fce4ec; /* Light pink background */
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 1rem;
+}
+
+.email-container input {
+    border: none;
+    background-color: transparent;
+    flex: 1;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #b78c9c; /* Light pinkish text color */
+    outline: none;
+}
+
+.email-container button {
+    background: linear-gradient(135deg, #f78da7, #f54ea2); /* Pink gradient */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    transition: transform 0.2s ease;
+}
+
+.email-container button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
